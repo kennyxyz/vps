@@ -238,8 +238,8 @@ Set_username(){
 }
 Set_passwd(){
 	echo "请输入 要添加的VPN账号 密码"
-	read -e -p "(默认: doub.io):" userpass
-	[[ -z "${userpass}" ]] && userpass="doub.io"
+	read -e -p "(默认: password):" userpass
+	[[ -z "${userpass}" ]] && userpass="password"
 	echo && echo -e "	密码 : ${Red_font_prefix}${userpass}${Font_color_suffix}" && echo
 }
 Set_tcp_port(){
